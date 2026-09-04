@@ -1,3 +1,4 @@
+// Alternar Tema (Claro/Escuro)
 const themeToggleBtn = document.getElementById('theme-toggle');
 
 themeToggleBtn.addEventListener('click', () => {
@@ -8,4 +9,24 @@ themeToggleBtn.addEventListener('click', () => {
   } else {
     themeToggleBtn.textContent = 'Modo Escuro';
   }
+});
+
+// Sistema de Curtida
+const likeBtn = document.getElementById('like-btn');
+const likeCount = document.getElementById('like-count');
+
+let count = 0;
+let liked = false;
+
+likeBtn.addEventListener('click', () => {
+  if (!liked) {
+    count++;
+    liked = true;
+    likeBtn.textContent = '❤️ Curtido';
+  } else {
+    count--;
+    liked = false;
+    likeBtn.textContent = '❤️ Curtir';
+  }
+  likeCount.textContent = count;
 });
