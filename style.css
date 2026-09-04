@@ -1,0 +1,71 @@
+
+:root {
+  --bg-color: #f4f4f4;
+  --card-bg: #ffffff;
+  --text-color: #222222;
+  --accent-color: #111111;
+  --button-bg: #111111;
+  --button-text: #ffffff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #e0e0e0;
+  --accent-color: #000000;
+  --button-bg: #e0e0e0;
+  --button-text: #121212;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+header button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.post, .sources {
+  background-color: var(--card-bg);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+a {
+  color: #007bff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+}
